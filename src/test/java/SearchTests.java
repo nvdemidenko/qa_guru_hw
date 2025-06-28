@@ -10,7 +10,6 @@ public class SearchTests {
     void successfulSearchTest() {
         open("https://www.ya.ru/");
         $("[name=text]").setValue("qa quru").pressEnter();
-
         $("html").shouldHave(text("qa.guru"));
 
     }
