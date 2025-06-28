@@ -8,9 +8,10 @@ import static com.codeborne.selenide.Selenide.open;
 public class SearchTests {
     @Test
     void successfulSearchTest() {
-        open("https://www.ya.ru/");
-        $("[name=text]").setValue("selenide").pressEnter();
-        $("html").shouldHave(text("ru.selenide.org"));
+        open("https://www.ya.ru/");Add commentMore actions
+        $("[name=text]").setValue("qa quru").pressEnter();
+
+        $("html").shouldHave(text("qa.guru"));
 
     }
 }
